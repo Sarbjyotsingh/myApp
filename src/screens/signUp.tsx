@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
-import {setNavigation} from "../navigations/navigation";
+import {setNavigation} from '../navigations/navigation';
 
 const App: FC = () => {
   const navigation = setNavigation();
@@ -8,8 +8,8 @@ const App: FC = () => {
     <View style={styles.container}>
       <Text> SignUp Screen</Text>
       <Button
-          title="Go to Home Screen"
-          onPress={() => navigation.openHomeScreen()}
+        title="Go to Home Screen"
+        onPress={() => navigation.openHomeScreen()}
       />
     </View>
   );
