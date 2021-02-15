@@ -4,14 +4,13 @@ import firebase from 'firebase';
 import {createStackNavigator} from "@react-navigation/stack";
 import {Dashboard, Home, Login, SignUp} from "../screens";
 
-type RootStackParamList = {
+export type RootStackParamList = {
   home: undefined;
   Profile: { userId: string };
   login: undefined;
   signUp: undefined;
   dashboard: undefined
 };
-
 
 const RootStack = createStackNavigator<RootStackParamList>();
 
