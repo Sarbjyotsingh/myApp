@@ -2,7 +2,7 @@ import React, {FC, useEffect} from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 import { useDispatch } from 'react-redux'
 import {setNavigation} from "../navigations/navigation";
-import { increment, decrement } from './../store/counter/counter'
+import { increment, decrement } from '../store/counter/counter'
 import {addTodo} from "../store/todo/action";
 
 const App: FC = () => {
