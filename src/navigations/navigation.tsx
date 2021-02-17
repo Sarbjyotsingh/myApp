@@ -1,6 +1,7 @@
 import {useCallback} from "react";
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, CommonActions } from '@react-navigation/native';
 import { RootStackParamList } from './mainNavigation';
+import { NavigationActions, StackActions } from 'react-navigation';
 
 /*
 Use this function for the navigation in whole project.
@@ -29,11 +30,9 @@ export function setNavigation() {
     const openLoginScreen = () => {
         navigationHandler('login')
     };
-
     const openSignScreen= () => {
         navigationHandler('signUp')
     };
-
     const openDashboardScreen= () => {
         navigationHandler('dashboard')
     };
@@ -42,6 +41,6 @@ export function setNavigation() {
         openHomeScreen,
         openLoginScreen,
         openSignScreen,
-        openDashboardScreen
+        openDashboardScreen,
     }
 }
